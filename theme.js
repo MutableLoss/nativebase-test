@@ -77,6 +77,9 @@ const LightTheme = {
         _text: {
           color: 'primary.50',
         },
+        _pressed: {
+          opacity: 70,
+        },
       },
       variants: {
         rounded: ({colorScheme}) => ({
