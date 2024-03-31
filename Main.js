@@ -17,6 +17,8 @@ import {
   DebugInstructions,
   ReloadInstructions,
 } from 'react-native/Libraries/NewAppScreen';
+import WideButton from './components/buttons/WideButton';
+import ConstrainedButton from './components/buttons/ConstrainedButton';
 
 type SectionProps = PropsWithChildren<{
   title: string,
@@ -71,12 +73,12 @@ const Main = ({handleTheme, themeType}) => {
               Read the docs to discover what to do next:
             </Section>
           </VStack>
-          <Button size="lg" variant="rounded" onPress={toggleColorMode}>
+          <ConstrainedButton onPress={toggleColorMode}>
             ColorMode Switch
-          </Button>
-          <Button size="sm" variant="wideSecondary" onPress={handleTheme}>
+          </ConstrainedButton>
+          <WideButton onPress={handleTheme}>
             Local Switch (Demo Only)
-          </Button>
+          </WideButton>
         </ScrollView>
       </VStack>
     </SafeAreaView>
