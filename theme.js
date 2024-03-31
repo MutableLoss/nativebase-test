@@ -74,6 +74,9 @@ const LightTheme = {
     Button: {
       baseStyle: {
         color: 'primary.800',
+        _text: {
+          color: 'primary.50',
+        },
       },
       variants: {
         rounded: ({colorScheme}) => ({
