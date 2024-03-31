@@ -20,56 +20,69 @@ const LightTheme = {
   components: {
     Box: {
       variants: {
-        section: ({colorMode}) => ({
+        section: {
           mt: 12,
           px: 6,
-        }),
+        },
       },
     },
     Heading: {
+      baseStyle: {
+        _light: {
+          color: 'primary.800',
+        },
+        _dark: {
+          color: 'primary.50',
+        },
+      },
       variants: {
         themed: ({colorMode}) => ({
-          color: colorMode !== 'light' ? 'primary.50' : 'primary.800',
+          // color: colorMode !== 'light' ? 'primary.50' : 'primary.800',
         }),
       },
     },
     Text: {
       baseStyle: {
         fontWeight: 600,
+        _light: {
+          color: 'primary.800',
+        },
+        _dark: {
+          color: 'primary.50',
+        },
       },
       defaultProps: {
         fontFamily: 'body',
       },
       variants: {
         themed: ({colorMode}) => ({
-          color: colorMode !== 'light' ? 'primary.50' : 'primary.800',
           m: 1,
           fontSize: 18,
         }),
-        themedShort: ({colorMode}) => ({
-          color: colorMode !== 'light' ? 'primary.50' : 'primary.800',
+        themedShort: {
           fontSize: 22,
           m: 0,
           mx: 1,
-        }),
-        paragraph: ({colorMode}) => ({
-          color: colorMode !== 'light' ? 'primary.50' : 'primary.800',
+        },
+        paragraph: {
           fontSize: 18,
           fontWeight: 400,
           mt: 4,
-        }),
+        },
       },
     },
     Button: {
+      baseStyle: {
+        color: 'primary.800',
+      },
       variants: {
         rounded: ({colorScheme}) => ({
-          color: colorScheme !== 'light' ? 'primary.50' : 'primary.800',
           bg: `${colorScheme}.400`,
           borderRadius: 12,
           m: 4,
         }),
         wideSecondary: ({colorScheme}) => ({
-          bg: `${colorScheme}.500`,
+          bg: `${colorScheme}.700`,
           borderRadius: 4,
           m: 4,
         }),
@@ -77,7 +90,12 @@ const LightTheme = {
     },
     VStack: ({colorMode}) => ({
       baseStyle: {
-        bg: colorMode !== 'light' ? 'primary.800' : 'primary.50',
+        _light: {
+          bg: 'primary.50',
+        },
+        _dark: {
+          bg: 'primary.800',
+        },
       },
     }),
   },
