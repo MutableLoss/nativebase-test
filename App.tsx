@@ -8,7 +8,7 @@
 import React, {useState} from 'react';
 
 import {NativeBaseProvider, extendTheme} from 'native-base';
-import LightTheme from './lightTheme';
+import LightTheme from './theme';
 import Main from './Main';
 
 function App(): React.JSX.Element {

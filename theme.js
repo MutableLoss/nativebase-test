@@ -55,10 +55,10 @@ const LightTheme = {
         fontFamily: 'body',
       },
       variants: {
-        themed: ({colorMode}) => ({
+        themed: {
           m: 1,
           fontSize: 18,
-        }),
+        },
         themedShort: {
           fontSize: 22,
           m: 0,
