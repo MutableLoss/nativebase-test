@@ -16,6 +16,10 @@ const LightTheme = {
       50: 'teal.50',
       500: 'teal.500',
     },
+    common: {
+      white: '#fefefe',
+      black: '#010',
+    },
   },
   components: {
     Box: {

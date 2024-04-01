@@ -2,7 +2,6 @@ import React from 'react';
 import type {PropsWithChildren} from 'react';
 import {SafeAreaView, ScrollView, StatusBar} from 'react-native';
 import {
-  Button,
   Box,
   Center,
   Heading,
